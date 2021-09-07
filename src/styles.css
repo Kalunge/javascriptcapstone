@@ -1,60 +1,79 @@
-*{
-    margin: 0;
-    padding: 0;
+* {
+  margin: 0;
+  padding: 0;
 }
 
 header {
-    width: 100vw;
-    justify-content: space-around;
-    align-items: center;
-    height: 60px;
-    display: flex;
-    border-bottom: 1px solid black;
+  width: 100vw;
+  justify-content: space-around;
+  align-items: center;
+  height: 60px;
+  display: flex;
+  border-bottom: 1px solid black;
 }
 
 ul {
-    display: flex;
-    margin-top: 1.5%;
-    justify-content: space-around;
-    width: 50%;
-    align-items: center;
+  display: flex;
+  margin-top: 1.5%;
+  justify-content: space-around;
+  width: 50%;
+  align-items: center;
 }
 
 li {
-    list-style: none;
+  list-style: none;
 }
 
 footer {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    padding-left: 4rem;
-    border: 1px solid black;
-    height: 12%;
-    padding-top: 17px;
-
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding-left: 4rem;
+  border: 1px solid black;
+  height: 12%;
+  padding-top: 17px;
 }
 
 img {
-    height: 300px;
-    margin-left: 10%;
-    max-width: 100%;
-    border: 2px solid black;
+  height: 300px;
+  margin-left: 10%;
+  max-width: 100%;
+  border: 2px solid black;
 }
 
 .items {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .modal-body {
-    border: solid 3px black;
-    height: 700px;
+  border: solid 3px black;
+
+  /* height: 700px; */
 }
 
 .btn-close {
-    font-size: 20px;
+  font-size: 20px;
+}
+
+.button {
+  border-bottom: solid 3px black;
+  border-right: solid 3px black;
+  border-top: solid 1px black;
+  border-left: solid 1px black;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+
+  /* justify-content: center; */
+  align-items: center;
+}
+
+textarea {
+  margin-left: 2%;
 }
