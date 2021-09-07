@@ -24,6 +24,7 @@ li {
   list-style: none;
 }
 
+<<<<<<< HEAD
 footer {
   position: absolute;
   bottom: 0;
@@ -36,6 +37,51 @@ footer {
 }
 
 img {
+=======
+main {
+  width: 95%;
+  margin: auto;
+  flex-wrap: wrap;
+}
+
+.list-item {
+  width: 30vw;
+  min-height: 20rem;
+  margin: auto;
+  margin-bottom: 20px;
+}
+
+.item-image {
+  margin: auto;
+  width: 70%;
+}
+
+.item-text {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.item-text p {
+  margin: 0;
+}
+
+.list-item img {
+  width: 100%;
+}
+
+.comment-btn {
+  margin-top: 1.5rem;
+}
+
+footer {
+  border: 1px solid black;
+  height: 12%;
+  padding-top: 17px;
+  margin-top: 50px;
+}
+
+.modal-body img {
+>>>>>>> dev
   height: 300px;
   margin-left: 10%;
   max-width: 100%;
@@ -51,13 +97,18 @@ img {
 
 .modal-body {
   border: solid 3px black;
+<<<<<<< HEAD
 
   /* height: 700px; */
+=======
+  height: 700px;
+>>>>>>> dev
 }
 
 .btn-close {
   font-size: 20px;
 }
+<<<<<<< HEAD
 
 .button {
   border-bottom: solid 3px black;
@@ -77,3 +128,5 @@ form {
 textarea {
   margin-left: 2%;
 }
+=======
+>>>>>>> dev
