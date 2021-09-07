@@ -35,3 +35,26 @@ footer {
     padding-top: 17px;
 
 }
+
+img {
+    height: 300px;
+    margin-left: 10%;
+    max-width: 100%;
+    border: 2px solid black;
+}
+
+.items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-body {
+    border: solid 3px black;
+    height: 700px;
+}
+
+.btn-close {
+    font-size: 20px;
+}
