@@ -16,7 +16,7 @@
   \**************************************************************/
 /***/ ((module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\");\n/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__);\n// Imports\n\nvar ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});\n// Module\n___CSS_LOADER_EXPORT___.push([module.id, \"\", \"\"]);\n// Exports\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);\n\n\n//# sourceURL=webpack://javascriptcapstone/./src/styles.css?./node_modules/css-loader/dist/cjs.js");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\");\n/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__);\n// Imports\n\nvar ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});\n// Module\n___CSS_LOADER_EXPORT___.push([module.id, \"* {\\r\\n  margin: 0;\\r\\n  padding: 0;\\r\\n}\\r\\n\\r\\nheader {\\r\\n  width: 100vw;\\r\\n  justify-content: space-around;\\r\\n  align-items: center;\\r\\n  height: 60px;\\r\\n  display: flex;\\r\\n  border-bottom: 1px solid black;\\r\\n}\\r\\n\\r\\nul {\\r\\n  display: flex;\\r\\n  margin-top: 1.5%;\\r\\n  justify-content: space-around;\\r\\n  width: 50%;\\r\\n  align-items: center;\\r\\n}\\r\\n\\r\\nli {\\r\\n  list-style: none;\\r\\n}\\r\\n\\r\\nmain {\\r\\n  width: 95%;\\r\\n  margin: auto;\\r\\n  flex-wrap: wrap;\\r\\n}\\r\\n\\r\\n.list-item {\\r\\n  width: 30vw;\\r\\n  min-height: 20rem;\\r\\n  margin: auto;\\r\\n  margin-bottom: 20px;\\r\\n}\\r\\n\\r\\n.item-image {\\r\\n  margin: auto;\\r\\n  width: 70%;\\r\\n}\\r\\n\\r\\n.item-text {\\r\\n  text-align: center;\\r\\n  margin-top: 10px;\\r\\n}\\r\\n\\r\\n.item-text p {\\r\\n  margin: 0;\\r\\n}\\r\\n\\r\\nimg {\\r\\n  width: 100%;\\r\\n}\\r\\n\\r\\n.comment-btn {\\r\\n  margin-top: 1.5rem;\\r\\n}\\r\\n\\r\\nfooter {\\r\\n  border: 1px solid black;\\r\\n  height: 12%;\\r\\n  padding-top: 17px;\\r\\n  margin-top: 50px;\\r\\n}\\r\\n\", \"\"]);\n// Exports\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);\n\n\n//# sourceURL=webpack://javascriptcapstone/./src/styles.css?./node_modules/css-loader/dist/cjs.js");
 
 /***/ }),
 
@@ -100,13 +100,33 @@ eval("\n\n/* istanbul ignore next  */\nfunction styleTagTransform(css, style) {\
 
 /***/ }),
 
+/***/ "./src/getmeals.js":
+/*!*************************!*\
+  !*** ./src/getmeals.js ***!
+  \*************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\nconst getMeals = () => fetch('https://www.themealdb.com/api/json/v1/1/filter.php?a=Chinese')\n  .then((response) => response.json())\n  .then((data) => data.meals);\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (getMeals);\n\n//# sourceURL=webpack://javascriptcapstone/./src/getmeals.js?");
+
+/***/ }),
+
+/***/ "./src/homelist.js":
+/*!*************************!*\
+  !*** ./src/homelist.js ***!
+  \*************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\nconst homeList = (data) => {\n  const mainDiv = document.querySelector('.main-div');\n\n  data.forEach((element) => {\n    const listItem = `<div class='list-item '>\n    <div class=\"item-image\">\n      <div class=\"item-image\">\n        <img src=${element.strMealThumb}  alt=\"\">\n      </div>\n      <div class=\"item-text\">\n        <p>${element.strMeal}</p>\n        <p>Likes</p>\n        <button class='comment-btn'>comment</button>\n      </div>\n    </div>\n  </div>`;\n\n    mainDiv.innerHTML += listItem;\n  });\n};\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (homeList);\n\n//# sourceURL=webpack://javascriptcapstone/./src/homelist.js?");
+
+/***/ }),
+
 /***/ "./src/index.js":
 /*!**********************!*\
   !*** ./src/index.js ***!
   \**********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _styles_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./styles.css */ \"./src/styles.css\");\n\n\n//# sourceURL=webpack://javascriptcapstone/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _styles_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./styles.css */ \"./src/styles.css\");\n/* harmony import */ var _getmeals_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./getmeals.js */ \"./src/getmeals.js\");\n/* harmony import */ var _homelist_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./homelist.js */ \"./src/homelist.js\");\n\n\n\n\nwindow.addEventListener('load', async () => {\n  ((0,_homelist_js__WEBPACK_IMPORTED_MODULE_2__[\"default\"])(await (0,_getmeals_js__WEBPACK_IMPORTED_MODULE_1__[\"default\"])()));\n});\n\n\n//# sourceURL=webpack://javascriptcapstone/./src/index.js?");
 
 /***/ })
 
