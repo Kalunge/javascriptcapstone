@@ -10,7 +10,7 @@ const homeList = (data) => {
       <div class="item-text">
         <p>${element.strMeal}</p>
         <p>Likes</p>
-        <button class='comment-btn'>comment</button>
+        <button type="button" class="comment-btn" data-bs-toggle="modal" data-bs-target="#staticBackdrop">comment</button>
       </div>
     </div>
   </div>`;
