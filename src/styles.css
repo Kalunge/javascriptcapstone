@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    width: 100vw;
+    justify-content: space-around;
+    align-items: center;
+    height: 60px;
+    display: flex;
+    border-bottom: 1px solid black;
+}
+
+ul {
+    display: flex;
+    margin-top: 1.5%;
+    justify-content: space-around;
+    width: 50%;
+    align-items: center;
+}
+
+li {
+    list-style: none;
+}
