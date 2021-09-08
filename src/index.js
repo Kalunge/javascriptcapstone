@@ -5,7 +5,7 @@ import addModal from './comments.js';
 
 
 window.addEventListener('load', async () => {
-  (homeList(await getMeals()));
+ (homeList(await getMeals()));
 });
 
 document.addEventListener('DOMContentLoaded', () => {
