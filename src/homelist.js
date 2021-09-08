@@ -2,20 +2,32 @@ const homeList = (data) => {
   const mainDiv = document.querySelector('.main-div');
 
   data.forEach((element) => {
-    const listItem = `<div class='list-item '>
-    <div class="item-image">
-      <div class="item-image">
-        <img src=${element.strMealThumb}  alt="">
-      </div>
-      <div class="item-text">
-        <p>${element.strMeal}</p>
-        <p>Likes</p>
-        <button type="button" class="comment-btn" data-bs-toggle="modal" data-bs-target="#staticBackdrop">comment</button>
-      </div>
-    </div>
-  </div>`;
+    const listItem = document.createElement('div');
+    listItem.classList.add('list-item');
+    const firstDiv = document.createElement('div');
+    firstDiv.classList.add('item-image');
+    const img = document.createElement('img');
+    img.src = element.strMealThumb;
+    const itemTextDiv = document.createElement('div');
+    itemTextDiv.classList.add('item-text');
+    const text = document.createElement('p');
+    text.innerHTML = element.strMeal;
+    const textLikes = document.createElement('p');
+    const button = document.createElement('button');
+    button.setAttribute('class', 'comment-btn');
+    button.setAttribute('id', `${element.idMeal}`);
+    button.setAttribute('type', 'button');
+    button.setAttribute('data-bs-toggle', 'modal');
+    button.setAttribute('data-bs-target', '#staticBackdrop');
+    button.innerHTML = 'comments';
+    listItem.appendChild(firstDiv);
+    firstDiv.appendChild(img);
+    itemTextDiv.appendChild(text);
+    itemTextDiv.appendChild(textLikes);
+    itemTextDiv.appendChild(button);
+    listItem.appendChild(itemTextDiv);
 
-    mainDiv.innerHTML += listItem;
+    mainDiv.appendChild(listItem);
   });
 };
 
