@@ -1,4 +1,4 @@
-/* eslint-disable */ 
+/* eslint-disable no-await-in-loop */
 import postLike from './postlikes.js';
 import getLikes from './getlikes.js';
 
@@ -64,7 +64,7 @@ const homeList = async (data) => {
     likeBtn.addEventListener('click', async (e) => {
       await postLike(e.target.id);
       const newLikes = await getLikes();
-      
+
       likesCount(e.target, newLikes, numOfLikes);
     });
   }
