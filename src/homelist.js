@@ -1,6 +1,7 @@
 /* eslint-disable no-await-in-loop */
 import postLike from './postlikes.js';
 import getLikes from './getlikes.js';
+import homeCounter from './homecount.js';
 
 const mainDiv = document.querySelector('.main-div');
 
@@ -13,6 +14,9 @@ const likesCount = (target, likesArray, numOfLikes) => {
 };
 
 const homeList = async (data) => {
+  const homeCount = document.querySelector('#home-count');
+  homeCount.innerHTML = homeCounter(data);
+
   for (let i = 0; i <= data.length - 1; i += 1) {
     const listItem = document.createElement('div');
     listItem.id = data[i].idMeal;
@@ -28,6 +32,7 @@ const homeList = async (data) => {
     mealName.innerHTML = data[i].strMeal;
     const mealLikes = document.createElement('p');
     const numOfLikes = document.createElement('span');
+    numOfLikes.innerHTML = '0 likes';
     itemText.appendChild(mealName);
     itemText.appendChild(mealLikes);
     const likeBtn = document.createElement('i');
@@ -49,7 +54,8 @@ const homeList = async (data) => {
     const likesArray = await getLikes();
     likesCount(likeBtn, likesArray, numOfLikes);
     likeBtn.addEventListener('click', async (e) => {
-      await postLike(e.target.id);
+      await postLike(likeBtn.id);
+
       const newLikes = await getLikes();
       likesCount(e.target, newLikes, numOfLikes);
     });
