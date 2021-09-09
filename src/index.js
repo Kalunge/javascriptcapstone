@@ -9,16 +9,15 @@ window.addEventListener('load', async () => {
 
 document.addEventListener('DOMContentLoaded', () => {
   // homeList(await getMeals());
-});
-
-const buttonn = document.querySelector('.main-div');
-const closeButton = document.querySelector('.btn-close');
-closeButton.addEventListener('click', () => {
-  window.location.href = '/';
-});
-buttonn.addEventListener('click', async (e) => {
-  e.preventDefault();
-  if (e.target.textContent === 'comments') {
-    await addModal(e.target.id);
-  }
+  const buttonn = document.querySelector('.main-div');
+  const closeButton = document.querySelector('.btn-close');
+  closeButton.addEventListener('click', () => {
+    window.location.href = '/';
+  });
+  buttonn.addEventListener('click', async (e) => {
+    e.preventDefault();
+    if (e.target.textContent === 'comments') {
+      await addModal(e.target.id);
+    }
+  });
 });

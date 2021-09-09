@@ -2,14 +2,16 @@
 import getMeal from './getMealById.js';
 import addComment from './addComment.js';
 import addAlert from './alert.js';
+import displayComment from './displayComments.js';
 
 const modalBody = document.querySelector('.modal-body');
 
-const oldComments = [
-  'my commentr',
-  'your comment',
-  'I love the african cuisine',
-];
+// const comments =
+// [
+//   'my commentr',
+//   'your comment',
+//   'I love the african cuisine',
+// ];
 
 const addModal = async (id) => {
   const meal = await getMeal(id);
@@ -26,7 +28,6 @@ const addModal = async (id) => {
   const recipe = document.createElement('p');
   const Instructions = meal.strInstructions.substring(0, 130);
   recipe.innerHTML = `<strong>Instructions for making</strong> ${Instructions}  =>FIND MORE AT  <a target="_blank" href=${meal.strYoutube}>Youtube</a>`;
-
   modalBody.appendChild(img);
   const div = document.createElement('div');
   div.classList.add('items');
@@ -34,11 +35,13 @@ const addModal = async (id) => {
   div.appendChild(category);
   div.appendChild(recipe);
   const headingFour = document.createElement('h4');
-  headingFour.innerHTML = `comments (${oldComments.length})`;
+  const comments = await displayComment(id);
+  headingFour.innerHTML = `comments (${comments.length})`;
   div.appendChild(headingFour);
-  oldComments.forEach((comment) => {
+  comments.forEach((comment) => {
     const p = document.createElement('p');
-    p.innerHTML = comment;
+    p.classList.add('comment-p');
+    p.innerHTML = `${comment.creation_date} ${comment.username}: ${comment.comment}`;
     return div.appendChild(p);
   });
   modalBody.appendChild(div);
@@ -66,9 +69,22 @@ const addModal = async (id) => {
     if (username.value === '') return addAlert('name', 'danger');
     if (comment.value === '') return addAlert('comment', 'danger');
     if (await addComment(formData)) {
-      addAlert('Comment added succesfully', 'success');
       comment.value = '';
       username.value = '';
+      addAlert('Comment added succesfully', 'success');
+      const comments = await displayComment(id);
+      headingFour.innerHTML = `comments (${comments.length})`;
+      div.replaceChild(headingFour, headingFour);
+      [...div.children].forEach((child) => {
+        if (child.className === 'comment-p') {
+          div.removeChild(child);
+        }
+      });
+      comments.forEach((comment) => {
+        const newp = document.createElement('p');
+        newp.innerHTML = `${comment.creation_date} ${comment.username}: ${comment.comment}`;
+        return div.appendChild(newp);
+      });
     }
   });
 };
