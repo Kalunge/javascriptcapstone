@@ -17,30 +17,22 @@ const homeList = async (data) => {
     const listItem = document.createElement('div');
     listItem.id = data[i].idMeal;
     listItem.classList.add('list-item');
-
     const itemImage = document.createElement('div');
     itemImage.classList.add('item-image');
-
     const image = document.createElement('img');
     image.src = data[i].strMealThumb;
-
     itemImage.appendChild(image);
-
     const itemText = document.createElement('div');
     itemText.classList.add('item-text');
-
     const mealName = document.createElement('p');
     mealName.innerHTML = data[i].strMeal;
-
     const mealLikes = document.createElement('p');
     const numOfLikes = document.createElement('span');
     itemText.appendChild(mealName);
     itemText.appendChild(mealLikes);
-
     const likeBtn = document.createElement('i');
     likeBtn.classList.add('bi', 'bi-heart', 'like-btn');
     likeBtn.id = data[i].idMeal;
-
     const button = document.createElement('button');
     button.setAttribute('class', 'comment-btn');
     button.setAttribute('id', `${data[i].idMeal}`);
@@ -48,23 +40,17 @@ const homeList = async (data) => {
     button.setAttribute('data-bs-toggle', 'modal');
     button.setAttribute('data-bs-target', '#staticBackdrop');
     button.innerHTML = 'comments';
-
     mealLikes.appendChild(numOfLikes);
     mealLikes.appendChild(likeBtn);
-
     listItem.appendChild(itemImage);
     listItem.appendChild(itemText);
     itemText.appendChild(button);
-
     mainDiv.appendChild(listItem);
-
     const likesArray = await getLikes();
     likesCount(likeBtn, likesArray, numOfLikes);
-
     likeBtn.addEventListener('click', async (e) => {
       await postLike(e.target.id);
       const newLikes = await getLikes();
-
       likesCount(e.target, newLikes, numOfLikes);
     });
   }
