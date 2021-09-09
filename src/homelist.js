@@ -1,6 +1,7 @@
 /* eslint-disable */ 
 import postLike from './postlikes.js';
 import getLikes from './getlikes.js';
+import homeCounter from './homecount.js';
 
 const mainDiv = document.querySelector('.main-div');
 
@@ -15,7 +16,7 @@ const likesCount = (target, likesArray, numOfLikes) => {
 const homeList = async (data) => {
 
   const homeCount = document.querySelector('#home-count');
-  homeCount.innerHTML = data.length;
+  homeCount.innerHTML =homeCounter(data)
 
 
   for (let i = 0; i <= data.length - 1; i += 1) {
