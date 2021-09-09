@@ -9,7 +9,7 @@ This project is build with:
 
 - ![HTML5](https://img.shields.io/badge/-HTML5-000000?style=flat&logo=html5&logoColor=ffffff&labelColor=E34F26), ![CSS3](https://img.shields.io/badge/-CSS3-000000?style=flat&logo=css3&logoColor=ffffff&labelColor=1572B6), 
 - ![JavaScript](https://img.shields.io/badge/-JavaScript-000000?style=flat&logo=javascript)
-- ![Bootstrap5](https://getbootstrap.com/docs/5.0/)
+- [Bootstrap5](https://getbootstrap.com/docs/5.0/)
 
 ## Getting Started
 
@@ -24,7 +24,7 @@ To get the content of this project locally you need to run this command in your 
 
 - To test run the following command
 
-  > `npx test`
+  > `npm test`
 
 ## Authors
 
