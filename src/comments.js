@@ -3,15 +3,9 @@ import getMeal from './getMealById.js';
 import addComment from './addComment.js';
 import addAlert from './alert.js';
 import displayComment from './displayComments.js';
+import commentsCounter from './commentsCounter.js';
 
 const modalBody = document.querySelector('.modal-body');
-
-// const comments =
-// [
-//   'my commentr',
-//   'your comment',
-//   'I love the african cuisine',
-// ];
 
 const addModal = async (id) => {
   const meal = await getMeal(id);
@@ -36,7 +30,7 @@ const addModal = async (id) => {
   div.appendChild(recipe);
   const headingFour = document.createElement('h4');
   const comments = await displayComment(id);
-  headingFour.innerHTML = `comments (${comments.length})`;
+  headingFour.innerHTML = `comments (${commentsCounter(comments)})`;
   div.appendChild(headingFour);
   comments.forEach((comment) => {
     const p = document.createElement('p');
@@ -73,7 +67,7 @@ const addModal = async (id) => {
       username.value = '';
       addAlert('Comment added succesfully', 'success');
       const comments = await displayComment(id);
-      headingFour.innerHTML = `comments (${comments.length})`;
+      headingFour.innerHTML = `comments (${commentsCounter(comments)})`;
       div.replaceChild(headingFour, headingFour);
       [...div.children].forEach((child) => {
         if (child.className === 'comment-p') {

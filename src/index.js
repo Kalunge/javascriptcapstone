@@ -8,7 +8,6 @@ window.addEventListener('load', async () => {
 });
 
 document.addEventListener('DOMContentLoaded', () => {
-  // homeList(await getMeals());
   const buttonn = document.querySelector('.main-div');
   const closeButton = document.querySelector('.btn-close');
   closeButton.addEventListener('click', () => {
