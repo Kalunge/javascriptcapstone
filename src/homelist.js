@@ -14,10 +14,8 @@ const likesCount = (target, likesArray, numOfLikes) => {
 };
 
 const homeList = async (data) => {
-
   const homeCount = document.querySelector('#home-count');
-  homeCount.innerHTML =homeCounter(data)
-
+  homeCount.innerHTML = homeCounter(data);
 
   for (let i = 0; i <= data.length - 1; i += 1) {
     const listItem = document.createElement('div');
@@ -74,7 +72,6 @@ const homeList = async (data) => {
       const newLikes = await getLikes();
 
       likesCount(e.target, newLikes, numOfLikes);
-
     });
   }
 };
