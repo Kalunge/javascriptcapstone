@@ -16,11 +16,7 @@
   \**************************************************************/
 /***/ ((module, __webpack_exports__, __webpack_require__) => {
 
-<<<<<<< HEAD
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\");\n/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__);\n// Imports\n\nvar ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});\n// Module\n___CSS_LOADER_EXPORT___.push([module.id, \"* {\\r\\n  margin: 0;\\r\\n  padding: 0;\\r\\n}\\r\\n\\r\\nheader {\\r\\n  width: 100vw;\\r\\n  justify-content: space-around;\\r\\n  align-items: center;\\r\\n  height: 60px;\\r\\n  display: flex;\\r\\n  border-bottom: 1px solid black;\\r\\n}\\r\\n\\r\\nul {\\r\\n  display: flex;\\r\\n  margin-top: 1.5%;\\r\\n  justify-content: space-around;\\r\\n  width: 50%;\\r\\n  align-items: center;\\r\\n}\\r\\n\\r\\nli {\\r\\n  list-style: none;\\r\\n}\\r\\n\\r\\nmain {\\r\\n  width: 95%;\\r\\n  margin: auto;\\r\\n  flex-wrap: wrap;\\r\\n}\\r\\n\\r\\n.list-item {\\r\\n  width: 30vw;\\r\\n  min-height: 20rem;\\r\\n  margin: auto;\\r\\n  margin-bottom: 20px;\\r\\n}\\r\\n\\r\\n.item-image {\\r\\n  margin: auto;\\r\\n  width: 70%;\\r\\n}\\r\\n\\r\\n.item-text {\\r\\n  text-align: center;\\r\\n  margin-top: 10px;\\r\\n}\\r\\n\\r\\n.item-text p {\\r\\n  margin: 0;\\r\\n}\\r\\n\\r\\nimg {\\r\\n  width: 100%;\\r\\n}\\r\\n\\r\\n.comment-btn {\\r\\n  margin-top: 1.5rem;\\r\\n}\\r\\n\\r\\nfooter {\\r\\n  border: 1px solid black;\\r\\n  height: 12%;\\r\\n  padding-top: 17px;\\r\\n  margin-top: 50px;\\r\\n}\\r\\n\", \"\"]);\n// Exports\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);\n\n\n//# sourceURL=webpack://javascriptcapstone/./src/styles.css?./node_modules/css-loader/dist/cjs.js");
-=======
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\");\n/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__);\n// Imports\n\nvar ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});\n// Module\n___CSS_LOADER_EXPORT___.push([module.id, \"*{\\n    margin: 0;\\n    padding: 0;\\n}\\n\\nheader {\\n    width: 100vw;\\n    justify-content: space-around;\\n    align-items: center;\\n    height: 60px;\\n    display: flex;\\n    border-bottom: 1px solid black;\\n}\\n\\nul {\\n    display: flex;\\n    margin-top: 1.5%;\\n    justify-content: space-around;\\n    width: 50%;\\n    align-items: center;\\n}\\n\\nli {\\n    list-style: none;\\n}\\n\\nfooter {\\n    position: absolute;\\n    bottom: 0;\\n    left: 0;\\n    right: 0;\\n    padding-left: 4rem;\\n    border: 1px solid black;\\n    height: 12%;\\n    padding-top: 17px;\\n\\n}\", \"\"]);\n// Exports\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);\n\n\n//# sourceURL=webpack://javascriptcapstone/./src/styles.css?./node_modules/css-loader/dist/cjs.js");
->>>>>>> 0b19d930959d12a30c90de4415b54b6e5a13a50d
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\");\n/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__);\n// Imports\n\nvar ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});\n// Module\n___CSS_LOADER_EXPORT___.push([module.id, \"* {\\n  margin: 0;\\n  padding: 0;\\n}\\n\\nheader {\\n  width: 100vw;\\n  justify-content: space-around;\\n  align-items: center;\\n  height: 60px;\\n  display: flex;\\n  border-bottom: 1px solid black;\\n}\\n\\nul {\\n  display: flex;\\n  margin-top: 1.5%;\\n  justify-content: space-around;\\n  width: 50%;\\n  align-items: center;\\n}\\n\\nli {\\n  list-style: none;\\n}\\n\\nmain {\\n  width: 95%;\\n  margin: auto;\\n  flex-wrap: wrap;\\n}\\n\\n.list-item {\\n  width: 30vw;\\n  min-height: 20rem;\\n  margin: auto;\\n  margin-bottom: 20px;\\n}\\n\\n.item-image {\\n  margin: auto;\\n  width: 70%;\\n}\\n\\n.item-text {\\n  text-align: center;\\n  margin-top: 10px;\\n}\\n\\n.item-text p {\\n  margin: 0;\\n}\\n\\n.list-item img {\\n  width: 100%;\\n}\\n\\n.comment-btn {\\n  margin-top: 1.5rem;\\n}\\n\\nfooter {\\n  border: 1px solid black;\\n  height: 12%;\\n  padding-top: 17px;\\n  margin-top: 50px;\\n}\\n\\n.modal-body img {\\n  height: 300px;\\n  margin-left: 10%;\\n  max-width: 100%;\\n  border: 2px solid black;\\n}\\n\\n.items {\\n  display: flex;\\n  flex-direction: column;\\n  align-items: center;\\n  justify-content: center;\\n}\\n\\n.modal-body {\\n  border: solid 3px black;\\n}\\n\\n.btn-close {\\n  font-size: 20px;\\n}\\n\", \"\"]);\n// Exports\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);\n\n\n//# sourceURL=webpack://javascriptcapstone/./src/styles.css?./node_modules/css-loader/dist/cjs.js");
 
 /***/ }),
 
@@ -104,14 +100,33 @@ eval("\n\n/* istanbul ignore next  */\nfunction styleTagTransform(css, style) {\
 
 /***/ }),
 
-<<<<<<< HEAD
+/***/ "./src/comments.js":
+/*!*************************!*\
+  !*** ./src/comments.js ***!
+  \*************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _meal_jpg__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./meal.jpg */ \"./src/meal.jpg\");\n/* harmony import */ var _getMealById_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./getMealById.js */ \"./src/getMealById.js\");\n\n\n\nconst modalBody = document.querySelector('.modal-body');\nconst mealName = 'My Meal';\n// const title = 'Comments(3)';\nconst oldComments = [\n  'my commentr',\n  'your comment',\n  'I love the african cuisine',\n];\n\nconst addModal = async (id) => {\n  const meal = await (0,_getMealById_js__WEBPACK_IMPORTED_MODULE_1__[\"default\"])(id);\n  const image = meal.strMealThumb;\n  const mealName = meal.strMeal;\n  const img = document.createElement('img');\n  img.src = image;\n  const p = document.createElement('h2');\n  p.classList.add('name');\n  p.innerHTML = mealName;\n\n  modalBody.appendChild(img);\n  const div = document.createElement('div');\n  div.classList.add('items');\n  div.appendChild(p);\n  const headingFour = document.createElement('h4');\n  headingFour.innerHTML = `comments (${oldComments.length})`;\n  div.appendChild(headingFour);\n  oldComments.forEach((comment) => {\n    const p = document.createElement('p');\n    p.innerHTML = comment;\n    return div.appendChild(p);\n  });\n  modalBody.appendChild(div);\n  const form = document.createElement('form');\n  form.innerHTML = `<div class=\"mb-3\">\n               <h3>Add a comment</h3>\n               <input type=\"text\" class=\"form-control  mt-3 py-2\" id=\"name\" placeholder=\"Your Name\">\n             </div>\n             <div class=\"mb-3\">\n               <textarea type=\"text\" placeholder=\"Your Insights\" class=\"form-control py-2\" id=\"comment\"></textarea>\n             </div>\n             <button type=\"submit\" id=\"button\" class=\"btn btn-light right button\">Comment</button>`;\n  modalBody.appendChild(form);\n};\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (addModal);\n\n\n//# sourceURL=webpack://javascriptcapstone/./src/comments.js?");
+
+/***/ }),
+
+/***/ "./src/getMealById.js":
+/*!****************************!*\
+  !*** ./src/getMealById.js ***!
+  \****************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\nconst getMeal = async (id) => {\n  const res = await fetch(\n    `https://www.themealdb.com/api/json/v1/1/lookup.php?i=${id}`\n  );\n  const result = await res.json();\n  return result.meals[0];\n};\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (getMeal);\n\n\n//# sourceURL=webpack://javascriptcapstone/./src/getMealById.js?");
+
+/***/ }),
+
 /***/ "./src/getmeals.js":
 /*!*************************!*\
   !*** ./src/getmeals.js ***!
   \*************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\nconst getMeals = () => fetch('https://www.themealdb.com/api/json/v1/1/filter.php?a=Chinese')\n  .then((response) => response.json())\n  .then((data) => data.meals);\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (getMeals);\n\n//# sourceURL=webpack://javascriptcapstone/./src/getmeals.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\nconst getMeals = async () => {\n  const response = await fetch(\n    'https://www.themealdb.com/api/json/v1/1/filter.php?a=Chinese'\n  );\n  const result = await response.json();\n  return result.meals;\n};\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (getMeals);\n\n\n//# sourceURL=webpack://javascriptcapstone/./src/getmeals.js?");
 
 /***/ }),
 
@@ -121,16 +136,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
   \*************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\nconst homeList = (data) => {\n  const mainDiv = document.querySelector('.main-div');\n\n  data.forEach((element) => {\n    const listItem = `<div class='list-item '>\n    <div class=\"item-image\">\n      <div class=\"item-image\">\n        <img src=${element.strMealThumb}  alt=\"\">\n      </div>\n      <div class=\"item-text\">\n        <p>${element.strMeal}</p>\n        <p>Likes</p>\n        <button class='comment-btn'>comment</button>\n      </div>\n    </div>\n  </div>`;\n\n    mainDiv.innerHTML += listItem;\n  });\n};\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (homeList);\n\n//# sourceURL=webpack://javascriptcapstone/./src/homelist.js?");
-=======
-/***/ "./src/comments.js":
-/*!*************************!*\
-  !*** ./src/comments.js ***!
-  \*************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\nconst modalBody = document.querySelector('.modal-body');\nconst text = ''\n\n\n\n\nconst addModal = () => {\n  modalBody.innerHTML = text;\n};\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (addModal);\n\n\n//# sourceURL=webpack://javascriptcapstone/./src/comments.js?");
->>>>>>> 0b19d930959d12a30c90de4415b54b6e5a13a50d
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _comments_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./comments.js */ \"./src/comments.js\");\n\n\nconst homeList = (data) => {\n  const mainDiv = document.querySelector('.main-div');\n\n  data.forEach((element) => {\n    const listItem = `<div class='list-item '>\n    <div class=\"item-image id=\"${element.idMeal}\">\n      <div class=\"item-image\">\n        <img src=${element.strMealThumb}  alt=\"\">\n      </div>\n      <div class=\"item-text\">\n        <p>${element.strMeal}</p>\n        <p>Likes</p>\n        <div class=\"comment-div\"><button type=\"button\"  class=\"comment-btn\" data-bs-toggle=\"modal\" data-bs-target=\"#staticBackdrop\">comment</button></div>\n      </div>\n    </div>\n  </div>`;\n\n    mainDiv.innerHTML += listItem;\n  });\n};\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (homeList);\n\n\n//# sourceURL=webpack://javascriptcapstone/./src/homelist.js?");
 
 /***/ }),
 
@@ -140,11 +146,17 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
   \**********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-<<<<<<< HEAD
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _styles_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./styles.css */ \"./src/styles.css\");\n/* harmony import */ var _getmeals_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./getmeals.js */ \"./src/getmeals.js\");\n/* harmony import */ var _homelist_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./homelist.js */ \"./src/homelist.js\");\n\n\n\n\nwindow.addEventListener('load', async () => {\n  ((0,_homelist_js__WEBPACK_IMPORTED_MODULE_2__[\"default\"])(await (0,_getmeals_js__WEBPACK_IMPORTED_MODULE_1__[\"default\"])()));\n});\n\n\n//# sourceURL=webpack://javascriptcapstone/./src/index.js?");
-=======
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _styles_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./styles.css */ \"./src/styles.css\");\n/* harmony import */ var _comments_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./comments.js */ \"./src/comments.js\");\n\n\n\n\n// document.addEventListener('DOMContentLoaded', () => {\n//   addModal()\n// });\n\n//# sourceURL=webpack://javascriptcapstone/./src/index.js?");
->>>>>>> 0b19d930959d12a30c90de4415b54b6e5a13a50d
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _styles_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./styles.css */ \"./src/styles.css\");\n/* harmony import */ var _getmeals_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./getmeals.js */ \"./src/getmeals.js\");\n/* harmony import */ var _homelist_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./homelist.js */ \"./src/homelist.js\");\n/* harmony import */ var _comments_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./comments.js */ \"./src/comments.js\");\n\n\n\n\n\nwindow.addEventListener('load', async () => {\n  (0,_homelist_js__WEBPACK_IMPORTED_MODULE_2__[\"default\"])(await (0,_getmeals_js__WEBPACK_IMPORTED_MODULE_1__[\"default\"])());\n});\n\ndocument.addEventListener('DOMContentLoaded', () => {});\n\n\n\n//# sourceURL=webpack://javascriptcapstone/./src/index.js?");
+
+/***/ }),
+
+/***/ "./src/meal.jpg":
+/*!**********************!*\
+  !*** ./src/meal.jpg ***!
+  \**********************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("module.exports = __webpack_require__.p + \"43271b41d25fc90e624f.jpg\";\n\n//# sourceURL=webpack://javascriptcapstone/./src/meal.jpg?");
 
 /***/ })
 
@@ -199,6 +211,18 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _sty
 /******/ 		};
 /******/ 	})();
 /******/ 	
+/******/ 	/* webpack/runtime/global */
+/******/ 	(() => {
+/******/ 		__webpack_require__.g = (function() {
+/******/ 			if (typeof globalThis === 'object') return globalThis;
+/******/ 			try {
+/******/ 				return this || new Function('return this')();
+/******/ 			} catch (e) {
+/******/ 				if (typeof window === 'object') return window;
+/******/ 			}
+/******/ 		})();
+/******/ 	})();
+/******/ 	
 /******/ 	/* webpack/runtime/hasOwnProperty shorthand */
 /******/ 	(() => {
 /******/ 		__webpack_require__.o = (obj, prop) => (Object.prototype.hasOwnProperty.call(obj, prop))
@@ -213,6 +237,26 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _sty
 /******/ 			}
 /******/ 			Object.defineProperty(exports, '__esModule', { value: true });
 /******/ 		};
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/publicPath */
+/******/ 	(() => {
+/******/ 		var scriptUrl;
+/******/ 		if (__webpack_require__.g.importScripts) scriptUrl = __webpack_require__.g.location + "";
+/******/ 		var document = __webpack_require__.g.document;
+/******/ 		if (!scriptUrl && document) {
+/******/ 			if (document.currentScript)
+/******/ 				scriptUrl = document.currentScript.src
+/******/ 			if (!scriptUrl) {
+/******/ 				var scripts = document.getElementsByTagName("script");
+/******/ 				if(scripts.length) scriptUrl = scripts[scripts.length - 1].src
+/******/ 			}
+/******/ 		}
+/******/ 		// When supporting browsers where an automatic publicPath is not supported you must specify an output.publicPath manually via configuration
+/******/ 		// or pass an empty string ("") and set the __webpack_public_path__ variable from your code to use your own logic.
+/******/ 		if (!scriptUrl) throw new Error("Automatic publicPath is not supported in this browser");
+/******/ 		scriptUrl = scriptUrl.replace(/#.*$/, "").replace(/\?.*$/, "").replace(/\/[^\/]+$/, "/");
+/******/ 		__webpack_require__.p = scriptUrl;
 /******/ 	})();
 /******/ 	
 /************************************************************************/
