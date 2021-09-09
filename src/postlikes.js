@@ -1,5 +1,5 @@
-const postLike = (mealId) => {
-  fetch('https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/8WhiXHgGMaGrsfo6vYsR/likes', {
+const postLike = async (mealId) => {
+  const response = await fetch('https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/8WhiXHgGMaGrsfo6vYsR/likes', {
     method: 'POST',
     body: JSON.stringify({
       item_id: mealId,
@@ -7,8 +7,8 @@ const postLike = (mealId) => {
     headers: {
       'Content-type': 'application/json; charset=UTF-8',
     },
-  })
-    .then((response) => response.json());
+  });
+  return response.text();
 };
 
 export default postLike;
