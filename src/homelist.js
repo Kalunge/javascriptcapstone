@@ -1,11 +1,10 @@
 
-
 import postLike from './postlikes.js';
 import getLikes from './getlikes.js';
 
 const mainDiv = document.querySelector('.main-div');
 
-const getLikesCount = (target, likesArray, numOfLikes) => {
+const likesCount = (target, likesArray, numOfLikes) => {
   likesArray.forEach(obj => {
     if (obj.item_id === target.id){
       numOfLikes.innerHTML = `${obj.likes} likes `;
@@ -43,19 +42,34 @@ for (let i = 0; i <= data.length - 1; i += 1) {
  const likeBtn = document.createElement('i');
  likeBtn.classList.add("bi", "bi-heart", "like-btn")
  likeBtn.id =  data[i].idMeal
+
+ const button = document.createElement('button');
+ button.setAttribute('class', 'comment-btn');
+ button.setAttribute('id', `${data[i].idMeal}`);
+ button.setAttribute('type', 'button');
+ button.setAttribute('data-bs-toggle', 'modal');
+ button.setAttribute('data-bs-target', '#staticBackdrop');
+ button.innerHTML = 'comments';
  
   mealLikes.appendChild(numOfLikes)
   mealLikes.appendChild(likeBtn)
 
   listItem.appendChild(itemImage);
   listItem.appendChild(itemText);
+  itemText.appendChild(button);
 
   mainDiv.appendChild(listItem)
 
   const likesArray =  await getLikes();
-  getLikesCount(likeBtn, likesArray, numOfLikes);
+  likesCount(likeBtn, likesArray, numOfLikes);
 
+  likeBtn.addEventListener('click', async (e) => {
+    await postLike(e.target.id);
+    const newLikes = await getLikes();
 
+    likesCount(e.target, newLikes, numOfLikes);
+  
+  });
   };
 
 };
