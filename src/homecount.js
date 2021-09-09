@@ -1,7 +1,3 @@
-
-const homeCounter = (data) =>{
-  return data.length;
-}
-
+const homeCounter = (data) => data.length;
 
 export default homeCounter;
