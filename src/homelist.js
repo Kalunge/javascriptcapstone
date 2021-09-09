@@ -68,6 +68,7 @@ const homeList = async (data) => {
       const newLikes = await getLikes();
 
       likesCount(likeBtn, newLikes, numOfLikes);
+
     });
   }
 };
