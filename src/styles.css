@@ -1,0 +1,127 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+  display: flex;
+  background-color: aquamarine;
+  padding: 0 6rem;
+  margin: auto;
+}
+
+ul {
+  display: flex;
+  margin-top: 1.5%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+li {
+  list-style: none;
+}
+
+.logo {
+  width: 5rem;
+  height: 100%;
+}
+
+.logo-img {
+  width: 100%;
+  height: 100%;
+}
+
+main {
+  width: 95%;
+  margin: auto;
+  flex-wrap: wrap;
+}
+
+.list-item {
+  width: 30vw;
+  min-height: 20rem;
+  margin: auto;
+  margin-bottom: 20px;
+}
+
+.item-image {
+  margin: auto;
+  width: 70%;
+}
+
+.item-text {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.item-text p {
+  margin: 0;
+}
+
+.list-item img {
+  width: 100%;
+}
+
+.comment-btn {
+  margin-top: 1.5rem;
+}
+
+footer {
+  border: 1px solid black;
+  height: 12%;
+  padding-top: 17px;
+  padding-left: 4rem;
+  margin-top: 50px;
+  background-color: darkcyan;
+  color: #fff;
+}
+
+.modal-body img {
+  height: 300px;
+  margin-left: 10%;
+  max-width: 100%;
+  border: 2px solid black;
+}
+
+.items {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-body {
+  border: solid 3px black;
+}
+
+.btn-close {
+  font-size: 20px;
+}
+
+input {
+  width: 60%;
+}
+
+textarea {
+  width: 100%;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 3%;
+}
+
+.form button {
+  margin-left: 1%;
+}
+
+.form h3 {
+  margin-left: 17%;
+}
