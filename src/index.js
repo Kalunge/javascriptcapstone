@@ -28,3 +28,13 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 });
+
+const navLinks =document.querySelector('.nav-links');
+navLinks.addEventListener('click', (e)=>{
+  if(e.target.id == 'pork-btn'){
+    console.log("pork clicked")
+  }else if(e.target.id == 'meals-btn'){
+    console.log("meals clicked")
+
+  }
+})
