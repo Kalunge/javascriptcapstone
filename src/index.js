@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const buttonn = document.querySelector('.main-div');
   const closeButton = document.querySelector('.btn-close');
   closeButton.addEventListener('click', () => {
-    window.location.href = '/';
+    window.location.href = './index.html';
   });
   buttonn.addEventListener('click', async (e) => {
     e.preventDefault();
