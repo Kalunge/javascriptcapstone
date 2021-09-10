@@ -4,7 +4,8 @@
 ![homeshot](src/assets/homeshot.png)
 ![screenshot](src/assets/commentshot.png)
 
-
+## Demo
+[Live demo](https://kalunge.github.io/javascriptcapstone/)
 
 ## Built With
 
