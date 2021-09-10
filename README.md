@@ -5,7 +5,7 @@
 ![screenshot](src/assets/commentshot.png)
 
 ## Demo
-[Live demo](https://kalunge.github.io/javascriptcapstone/)
+[Live demo](https://kalunge.github.io/javascriptcapstone/dist/)
 
 ## Built With
 
