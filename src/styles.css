@@ -3,15 +3,27 @@
   padding: 0;
 }
 
+a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+}
+
+a:hover {
+  color: aquamarine;
+}
+
 header {
   width: 100%;
   justify-content: space-between;
   align-items: center;
   height: 80px;
   display: flex;
-  background-color: aquamarine;
+  background-color: rgb(69, 189, 149);
   padding: 0 6rem;
   margin: auto;
+  color: #fff;
+  font-weight: bold;
 }
 
 ul {
@@ -33,6 +45,16 @@ li {
 .logo-img {
   width: 100%;
   height: 100%;
+}
+
+.logo-div {
+  align-items: center;
+}
+
+.logo-text {
+  margin-left: 15px;
+  font-size: 2rem;
+  color: aquamarine;
 }
 
 main {
@@ -66,10 +88,6 @@ main {
   width: 100%;
 }
 
-.comment-btn {
-  margin-top: 1.5rem;
-}
-
 footer {
   border: 1px solid black;
   height: 12%;
@@ -98,8 +116,24 @@ footer {
   border: solid 3px black;
 }
 
-.btn-close {
-  font-size: 20px;
+.like-btn:hover {
+  transform: scale(1.2);
+}
+
+.comment-btn {
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+  border-radius: 4px;
+  padding: 0.7px 1rem;
+  background-color: rgb(129, 103, 104);
+  border: none;
+  color: #fff;
+}
+
+.comment-btn:hover {
+  transform: scale(1.15);
+  transition: ease;
+  background-color: rgb(106, 131, 68);
 }
 
 input {
