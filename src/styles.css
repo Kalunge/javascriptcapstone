@@ -3,6 +3,16 @@
   padding: 0;
 }
 
+a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+}
+
+a:hover {
+  color: aquamarine;
+}
+
 header {
   width: 100%;
   justify-content: space-between;
@@ -45,10 +55,6 @@ li {
   margin-left: 15px;
   font-size: 2rem;;
   color: aquamarine;
-}
-
-.nav-links {
-  border: 1px solid black;
 }
 
 main {
