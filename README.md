@@ -2,6 +2,7 @@
 > This project is built based on external APIs. One  [Meals DB API](https://www.themealdb.com/api.php) storing information abot meals and another [Involvement API](https://www.notion.so/microverse/Involvement-API-869e60b5ad104603aa6db59e08150270) to help with page interactions
 
 ![homeshot](src/assets/homeshot.png)
+
 ![screenshot](src/assets/commentshot.png)
 
 ## Demo
