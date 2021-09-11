@@ -51,9 +51,9 @@ li {
   align-items: center;
 }
 
-.logo-text{
+.logo-text {
   margin-left: 15px;
-  font-size: 2rem;;
+  font-size: 2rem;
   color: aquamarine;
 }
 
@@ -86,10 +86,6 @@ main {
 
 .list-item img {
   width: 100%;
-}
-
-.comment-btn {
-  margin-top: 1.5rem;
 }
 
 footer {
@@ -131,7 +127,7 @@ footer {
   padding: 0.7px 1rem;
   background-color: rgb(129, 103, 104);
   border: none;
-  color:#fff;
+  color: #fff;
 }
 
 .comment-btn:hover {
